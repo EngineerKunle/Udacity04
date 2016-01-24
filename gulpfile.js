@@ -1,5 +1,15 @@
-var gulp = require('gulp');
+var gulp      = require('gulp'),
+    cssnano   = require('gulp-cssnano');
 
-gulp.task('default', function() {
-  // place code for your default task here
+
+//minify task for CSS
+gulp.task('minify', function() {
+    return gulp.src(['src/css/*.css','src/views/css/*.css'])
+        .pipe(cssnano())
+        .pipe(gulp.dest('dist/css'));
 });
+
+//minify task for JS
+
+
+gulp.task('default',['minify']);
