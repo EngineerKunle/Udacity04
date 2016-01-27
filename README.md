@@ -39,7 +39,7 @@ Using Mamp server I was able to produce Average time to generate last 10 frame l
 
 4. Reduce Number of Pizza's to 50 this really helped improve the performance of the page.
 
-5. Also Cached the length of the items array due to the total number of pizzas on the page remains constant.
+5. Also stored the length of the items in an array due to the total number of pizzas on the page remains constant.
 
 
 
