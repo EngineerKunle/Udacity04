@@ -523,7 +523,7 @@ function updatePositions() {
    
    //phaseArray values will now be used here
    for (var i = 0; i < itemsLength; i++) {
-      items[i].style.left = items[i].basicLeft + 100 * phaseArray + 'px';
+      items[i].style.left = items[i].basicLeft + 100 * phaseArray[(i % 5)] + 'px';
    }
    
 
